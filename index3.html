@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Confirm</title>
+</head>
+ <script>
+   function foo(evt){
+      var spn_a=document.getElementById("spn_a");
+      var spn_b=document.getElementById("spn_b");
+      var spn_c=document.getElementById("spn_c");
+      var spn_d=document.getElementById("spn_d");
+     spn_a.innerHTML=event.screenX;
+     spn_b.innerHTML=event.screenY;
+     spn_c.innerHTML=event.clientX;
+     spn_d.innerHTML=event.clientY;
+}
+
+window.onmousemove=foo;
+
+
+</script>
+
+<body>
+  <h1 id="h1_a">大きな見出し</h1>
+  <div>
+デスクトップX座標：<span id="spn_a"></span>px<br>
+デスクトップY座標：<span id="spn_b"></span>px<br>
+ブラウザ内　X座標：<span id="spn_c"></span>px<br>
+ブラウザ内　Y座標：<span id="spn_d"></span>px<br>
+
+</div>
+
+</body>
+</html>
+
+
+
+
